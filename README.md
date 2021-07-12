@@ -2,9 +2,7 @@
 Radio Player: Using this sample application, you can listen to different radio streaming which is available from the list. You can also see a list of recently played radio streamings from the recent tab. You can move between the Home and Recent tabs while radio streaming will continue to play. You can also play and pause the currently playing radio. This application while also plays the radio while the app is in background mode.
 
 ## Screenshot
-![Simulator Screen Shot - iPhone 11 - 2021-07-12 at 15 57 31](https://user-images.githubusercontent.com/40895111/125273067-2b542b00-e32a-11eb-95e2-b5137096174c.png)
-![Simulator Screen Shot - iPhone 11 - 2021-07-12 at 15 57 35](https://user-images.githubusercontent.com/40895111/125273074-2db68500-e32a-11eb-92d0-1d8c9dcbe623.png)
-![Simulator Screen Shot - iPhone 11 - 2021-07-12 at 15 57 42](https://user-images.githubusercontent.com/40895111/125273085-3018df00-e32a-11eb-9f02-69ca43fdf17b.png)
+<img width="1285" alt="Screenshot 2021-07-12 at 4 02 16 PM" src="https://user-images.githubusercontent.com/40895111/125273440-8d149500-e32a-11eb-873b-0252b0e45f89.png">
 
 ## Prerequisites
 CocoaPods 1.0+
@@ -30,6 +28,6 @@ Note: If you intend to use these samples offline, be sure to run Cocoapods befor
 - [x] Automatic handling of route changes
 - [x] Support for Carthage
 - [x] Support for Swift Package Manager SPM
-- [x ] Support for Audio Taps
-- [x ] Google Ads support
+- [x] Support for Audio Taps
+- [x] Google Ads support
 
