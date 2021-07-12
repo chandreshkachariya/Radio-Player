@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="emZ-OK-3wQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Radio_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="-417"/>
+        </scene>
+        <!--Recently Played-->
+        <scene sceneID="NLm-Qw-Ag4">
+            <objects>
+                <viewController storyboardIdentifier="RecentlyPlayedVC" id="3aC-UN-JQz" customClass="RecentlyPlayedVC" customModule="Radio_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cVg-OL-ik1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d8j-V4-sre">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0jK-yv-wbz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d8j-V4-sre" firstAttribute="top" secondItem="0jK-yv-wbz" secondAttribute="top" id="ED7-f8-WOJ"/>
+                            <constraint firstItem="d8j-V4-sre" firstAttribute="leading" secondItem="0jK-yv-wbz" secondAttribute="leading" id="UDy-KC-htT"/>
+                            <constraint firstItem="d8j-V4-sre" firstAttribute="trailing" secondItem="0jK-yv-wbz" secondAttribute="trailing" id="XEQ-nG-Qz0"/>
+                            <constraint firstItem="d8j-V4-sre" firstAttribute="bottom" secondItem="0jK-yv-wbz" secondAttribute="bottom" id="dyj-r2-TBd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recently Played" image="baseline_history_black_36pt" id="54Z-vw-MGR">
+                        <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tblView" destination="d8j-V4-sre" id="KAS-fN-Aac"/>
+                        <outlet property="tblViewBottomConstraint" destination="dyj-r2-TBd" id="siA-qJ-xud"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZ7-md-bgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="639"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="qfk-Vp-6pJ">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="5Pv-JW-fMW" customClass="HomeVC" customModule="Radio_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="add-DH-5yc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ej2-35-nP9">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="pDq-4u-N8s" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="44" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ayV-Ju-LNf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pDq-4u-N8s" firstAttribute="top" secondItem="ayV-Ju-LNf" secondAttribute="top" id="6FC-bx-heh"/>
+                            <constraint firstItem="ej2-35-nP9" firstAttribute="bottom" secondItem="ayV-Ju-LNf" secondAttribute="bottom" id="Fk6-jj-dZP"/>
+                            <constraint firstItem="pDq-4u-N8s" firstAttribute="centerX" secondItem="add-DH-5yc" secondAttribute="centerX" id="UoI-1k-Ri4"/>
+                            <constraint firstItem="ej2-35-nP9" firstAttribute="top" secondItem="pDq-4u-N8s" secondAttribute="bottom" id="aDV-uj-jlW"/>
+                            <constraint firstItem="ej2-35-nP9" firstAttribute="leading" secondItem="ayV-Ju-LNf" secondAttribute="leading" id="q0v-Pr-3gF"/>
+                            <constraint firstItem="ej2-35-nP9" firstAttribute="trailing" secondItem="ayV-Ju-LNf" secondAttribute="trailing" id="vT4-IT-na1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="baseline_home_black_36pt" id="0uw-YD-YaC">
+                        <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="bannerView" destination="pDq-4u-N8s" id="cVM-vL-qIP"/>
+                        <outlet property="tblView" destination="ej2-35-nP9" id="7xV-KA-Qt2"/>
+                        <outlet property="tblViewBottomConstraint" destination="Fk6-jj-dZP" id="7QF-b4-8Bu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTL-J2-wS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575.36231884057975" y="-12.053571428571429"/>
+        </scene>
+        <!--Tab BarVC-->
+        <scene sceneID="5h8-Ef-HzY">
+            <objects>
+                <tabBarController id="emZ-OK-3wQ" customClass="TabBarVC" customModule="Radio_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kj2-lC-LKR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5Pv-JW-fMW" kind="relationship" relationship="viewControllers" id="yAH-Bm-0ZT"/>
+                        <segue destination="3aC-UN-JQz" kind="relationship" relationship="viewControllers" id="oLa-ND-2GG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJS-ju-qPl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-315" y="291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseline_history_black_36pt" width="36" height="36"/>
+        <image name="baseline_home_black_36pt" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
